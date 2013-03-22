@@ -5,6 +5,7 @@ public class Solver
 	// find a solution to the initial board
 	public Solver( Board initial )
 	{
+		
 	}
 	
 	// is the initial board solvable?
