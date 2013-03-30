@@ -1,9 +1,10 @@
 package gna;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
-public class Board implements Comparable<Board>
+public class Board implements Comparable<Board>, Iterable<Board>
 {
 	private int[][] tiles;
 	private int width;
@@ -183,6 +184,54 @@ public class Board implements Comparable<Board>
 		}else{
 			return 0;
 		}
+	}
+
+	@Override
+	public Iterator<Board> iterator() {
+		Iterator<Board> it = this.neighbors().iterator();
+		return it;
+	}
+
+	/**
+	 * @return the tiles
+	 */
+	public int[][] getTiles() {
+		return tiles;
+	}
+
+	/**
+	 * @param tiles the tiles to set
+	 */
+	public void setTiles(int[][] tiles) {
+		this.tiles = tiles;
+	}
+
+	/**
+	 * @return the width
+	 */
+	public int getWidth() {
+		return width;
+	}
+
+	/**
+	 * @param width the width to set
+	 */
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	/**
+	 * @return the height
+	 */
+	public int getHeight() {
+		return height;
+	}
+
+	/**
+	 * @param height the height to set
+	 */
+	public void setHeight(int height) {
+		this.height = height;
 	}
 }
 
