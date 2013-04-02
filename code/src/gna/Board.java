@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
-public class Board implements Comparable<Board>, Iterable<Board>
+public class Board implements Iterable<Board>
 {
 	private int[][] tiles;
 	private int width;
@@ -79,31 +79,44 @@ public class Board implements Comparable<Board>, Iterable<Board>
 	// return an Iterable of all neighboring board positions
 	public Iterable<Board> neighbors()
 	{
-		Board newBoard = new Board(tiles);
 		ArrayList<Board> boardList = new ArrayList<Board>();
+		
 		if(isSwappableRight()){
+			int[][] tempTiles = new int[this.height][this.width];
+			arrayCopy2D(tiles,tempTiles);
+			Board newBoard = new Board(tempTiles);
 			newBoard.swapRight();
-			boardList.add(newBoard);
-			newBoard = new Board(tiles);
+			boardList.add(newBoard);			
 		}
 		if(isSwappableLeft()){
+			int[][] tempTiles = new int[this.height][this.width];
+			arrayCopy2D(tiles,tempTiles);
+			Board newBoard = new Board(tempTiles);
 			newBoard.swapLeft();
 			boardList.add(newBoard);
-			newBoard = new Board(tiles);
 		}
 		if(isSwappableDown()){
+			int[][] tempTiles = new int[this.height][this.width];
+			arrayCopy2D(tiles,tempTiles);
+			Board newBoard = new Board(tempTiles);
 			newBoard.swapDown();
 			boardList.add(newBoard);
-			newBoard = new Board(tiles);
 		}
 		if(isSwappableUp()){
+			int[][] tempTiles = new int[this.height][this.width];
+			arrayCopy2D(tiles,tempTiles);
+			Board newBoard = new Board(tempTiles);
 			newBoard.swapUp();
 			boardList.add(newBoard);
-			newBoard = new Board(tiles);
 		}
 		return boardList;
 	}
-
+	
+	public static void arrayCopy2D(int[][] array1,int[][] array2){
+		for (int i = 0; i < array1.length; i++) {
+		    System.arraycopy(array1[i], 0, array2[i], 0, array1[0].length);
+		}
+	}
 	// return a string representation of the board
 	public String toString()
 	{
@@ -172,18 +185,6 @@ public class Board implements Comparable<Board>, Iterable<Board>
 		int temp = tiles[y1][x1];
 		tiles[y1][x1] = tiles[y2][x2];
 		tiles[y2][x2] = temp;
-	}
-
-	@Override
-	public int compareTo(Board arg0) {
-		int diff = this.manhattan() - arg0.manhattan();
-		if(diff < 0){
-			return -1;
-		}else if(diff > 0){
-			return 1;
-		}else{
-			return 0;
-		}
 	}
 
 	@Override
