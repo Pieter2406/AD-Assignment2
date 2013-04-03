@@ -1,20 +1,21 @@
 package gna;
 
 import java.util.ArrayList;
+import java.util.PriorityQueue;
 
-import edu.princeton.cs.algs4.MinPQ;
 
 public class Solver
 
 {
 	private int moves;
-	private MinPQ<InterState> statePQ ;
+	private PriorityQueue<InterState> statePQ ;
 	private InterState initState;
 	// find a solution to the initial board
 	public Solver( Board initial )
 	{
-		statePQ = new MinPQ<InterState>();
+		statePQ = new PriorityQueue<InterState>();
 		initState = new InterState(0,null,initial);
+		statePQ.add(initState);
 		if(isSolvable()){
 			while (!isGoalState(initState.getInitBoard())){
 				this.stateToPQ();
@@ -25,28 +26,37 @@ public class Solver
 		}
 	}
 	public void stateToPQ(){
-		statePQ.insert(initState);
-		initState = statePQ.delMin();
+		initState = statePQ.remove();
 		for(Board brd : initState.getInitBoard()){
-			InterState neighborState = new InterState(brd.manhattan(),initState,brd);
-			statePQ.insert(neighborState);
+			if(initState.getPreviousState() == null){
+				InterState neighborState = new InterState(brd.hamming(),initState,brd);
+				statePQ.add(neighborState);
+			}
+			else if(!brd.equals(initState.getPreviousState().getInitBoard())){
+				InterState neighborState = new InterState(brd.hamming(),initState,brd);
+				statePQ.add(neighborState);
+			}
+
 		}
 	}
 	public boolean isGoalState(Board board){
-		boolean isGoal = false;
-		for(int y = 0; y < board.getHeight(); y++){
-			for(int x = 0; x < board.getWidth(); x++){
-				if(board.getTiles()[y][x] == board.getWidth()*y+x+1){
-					isGoal = true;
-				}else if(board.getTiles()[board.getHeight() - 1][board.getWidth() - 1] == 0){
-					isGoal = true;
-				}
-				else{
-					return false;
+		if(board.getTiles()[board.getHeight() - 1][board.getWidth() - 1] == 0){
+			for(int y = 0; y < board.getHeight(); y++){
+				for(int x = 0; x < board.getWidth(); x++){
+					if(y == board.getHeight() - 1 && x == board.getWidth() - 1){
+						break;
+					}else{
+						if(board.getTiles()[y][x] != board.getWidth()*y+x+1){
+							return false;
+						}
+					}
 				}
 			}
+			return true;
+		}else{
+			return false;
 		}
-		return isGoal;
+
 	}
 
 	// is the initial board solvable?
@@ -105,7 +115,7 @@ public class Solver
 		ArrayList<Board> boardList = new ArrayList<Board>();
 		InterState temp = initState;
 		while(temp.getPreviousState() != null){
-			boardList.add(temp.getInitBoard());
+			boardList.add(0,temp.getInitBoard());
 			temp = temp.getPreviousState();
 		}
 		return boardList;

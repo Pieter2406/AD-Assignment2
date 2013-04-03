@@ -4,13 +4,15 @@ public class InterState implements Comparable<InterState> {
 	private int moves;
 	private InterState previousState;
 	private Board initBoard;
+	private int priorityScore;
 	
-	public InterState(int moves, InterState previousState, Board initBoard){
+	public InterState(int priority, InterState previousState, Board initBoard){
 		if (previousState != null){
-			this.moves = moves + previousState.getMoves();
+			this.moves = 1 + previousState.getMoves();
 		}else{
-			this.moves = moves;
+			this.moves = 0;
 		}
+		this.priorityScore = priority + this.moves;
 		this.previousState = previousState;
 		this.initBoard = initBoard;
 	}
@@ -52,7 +54,7 @@ public class InterState implements Comparable<InterState> {
 	}
 	@Override
 	public int compareTo(InterState other) {
-		int diff = this.moves - other.moves;
+		int diff = this.priorityScore - other.priorityScore;
 		if(diff < 0){
 			return -1;
 		}else if(diff > 0){

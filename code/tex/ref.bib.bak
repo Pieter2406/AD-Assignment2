@@ -1,0 +1,19 @@
+% This file was created with JabRef 2.9.2.
+% Encoding: Cp1252
+
+
+@OTHER{A*Wiki,
+  author = {Wikipedia},
+  timestamp = {2013.04.03},
+  title = {A* search algorithm},
+  url = {http://en.wikipedia.org/wiki/A*_search_algorithm}
+}
+
+@OTHER{princetonPuzzle,
+  author = {cs.princeton.edu},
+  timestamp = {2013.04.03},
+  title = {8 puzzle - COS 226 Programming Assignment},
+  url = {http://www.cs.princeton.edu/courses/archive/fall12/cos226/assignments/8puzzle.html}
+}
+
+

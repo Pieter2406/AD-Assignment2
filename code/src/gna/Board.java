@@ -34,7 +34,7 @@ public class Board implements Iterable<Board>
 		int outOfPlace = 0;
 		for(int y = 0; y < height;y++){
 			for(int x = 0; x < width;x++){
-				if(tiles[y][x] != width*x+y+1 && tiles[y][x] != 0){
+				if(tiles[y][x] != width*y+x+1 && tiles[y][x] != 0){
 					outOfPlace++;
 				}
 			}
@@ -51,8 +51,8 @@ public class Board implements Iterable<Board>
 		for(int y = 0; y < height;y++){
 			for (int x = 0; x < width;x++){
 				if(tiles[y][x] != 0){
-					rightX = tiles[y][x] / width;
-					rightY = (tiles[y][x] % height) - 1;
+					rightY = (tiles[y][x] - 1) / width;
+					rightX = (tiles[y][x] - 1) % height;
 					sum += Math.abs(rightX - x) + Math.abs(rightY - y);
 				}
 			}
@@ -63,6 +63,9 @@ public class Board implements Iterable<Board>
 	// does this board position equal o
 	public boolean equals(Object o)
 	{
+		if (o == null){
+			return false;
+		}
 		Board other = (Board) o;
 		boolean isEqual = true;
 		for(int y = 0; y < height;y++){
@@ -112,6 +115,34 @@ public class Board implements Iterable<Board>
 		return boardList;
 	}
 	
+	/**
+	 * @return the emptySpotX
+	 */
+	public int getEmptySpotX() {
+		return emptySpotX;
+	}
+
+	/**
+	 * @param emptySpotX the emptySpotX to set
+	 */
+	public void setEmptySpotX(int emptySpotX) {
+		this.emptySpotX = emptySpotX;
+	}
+
+	/**
+	 * @return the emptySpotY
+	 */
+	public int getEmptySpotY() {
+		return emptySpotY;
+	}
+
+	/**
+	 * @param emptySpotY the emptySpotY to set
+	 */
+	public void setEmptySpotY(int emptySpotY) {
+		this.emptySpotY = emptySpotY;
+	}
+
 	public static void arrayCopy2D(int[][] array1,int[][] array2){
 		for (int i = 0; i < array1.length; i++) {
 		    System.arraycopy(array1[i], 0, array2[i], 0, array1[0].length);
@@ -168,15 +199,19 @@ public class Board implements Iterable<Board>
 	 **************************************************************************/
 	private void swapRight(){
 		newExchange(emptySpotX,emptySpotY,emptySpotX + 1, emptySpotY);
+		emptySpotX++;
 	}
 	private void swapLeft(){
 		newExchange(emptySpotX,emptySpotY,emptySpotX - 1, emptySpotY);
+		emptySpotX--;
 	}
 	private void swapDown(){
 		newExchange(emptySpotX,emptySpotY,emptySpotX, emptySpotY + 1);
+		emptySpotY++;
 	}
 	private void swapUp(){
 		newExchange(emptySpotX,emptySpotY,emptySpotX, emptySpotY - 1);
+		emptySpotY--;
 	}
 	/*************************************************************************
 	 *								HELPERMETHODS							 *
