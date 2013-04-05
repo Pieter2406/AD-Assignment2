@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.12)  3 APR 2013 17:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.12)  5 APR 2013 03:18
 entering extended mode
 **report.tex
 
@@ -121,12 +121,31 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(C:\Users\Pieter\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip46
+\bibsep=\skip47
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count100
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks19
+\float@box=\box28
+\@float@everytoks=\toks20
+\@floatcapt=\box29
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks19
+\KV@toks@=\toks21
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -148,17 +167,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count100
+\Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
-)
-(C:\Users\Pieter\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip46
-\bibsep=\skip47
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count101
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -174,9 +186,9 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
 \Gm@bindingoffset=\dimen115
 \Gm@wd@mp=\dimen116
 \Gm@odd@mp=\dimen117
@@ -185,37 +197,37 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen120
 \Gm@layouthoffset=\dimen121
 \Gm@layoutvoffset=\dimen122
-\Gm@dimlist=\toks20
+\Gm@dimlist=\toks22
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Users\Pieter\Documents\--- SCHOOL ---\GitHub\A&D\AD-assignment2\code\tex\r
 eport.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 (C:\Users\Pieter\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
+\scratchcounter=\count106
 \scratchdimen=\dimen123
-\scratchbox=\box28
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count108
+\scratchbox=\box30
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count109
 \MPscratchDim=\dimen124
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks22
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks24
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -267,10 +279,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Missing character: There is no Ã in font cmcsc10!
-Missing character: There is no © in font cmcsc10!
- [1
+) [1
 
 {C:/Users/Pieter/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/P
 ieter/Documents/--- SCHOOL ---/GitHub/A&D/AD-assignment2/code/tex/logo.jpg>])
@@ -278,36 +287,88 @@ ieter/Documents/--- SCHOOL ---/GitHub/A&D/AD-assignment2/code/tex/logo.jpg>])
 eport.toc")
 \tf@toc=\write3
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-[2]
+[2] <8-puz.jpg, id=16, 111.41624pt x 110.814pt>
+File: 8-puz.jpg Graphic file (type jpg)
+ <use 8-puz.jpg>
+Package pdftex.def Info: 8-puz.jpg used on input line 32.
+(pdftex.def)             Requested size: 94.70425pt x 94.19232pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 53.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 53.
+ [3 <C:/Users/Pieter/Documents/--- SCHOOL ---/GitHub/A&D/AD-assignment2/code/te
+x/8-puz.jpg>]
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+<8-puz_neighbours.jpg, id=24, 610.6815pt x 133.09724pt>
+File: 8-puz_neighbours.jpg Graphic file (type jpg)
+
+<use 8-puz_neighbours.jpg>
+Package pdftex.def Info: 8-puz_neighbours.jpg used on input line 73.
+(pdftex.def)             Requested size: 458.01001pt x 99.82268pt.
+
+Overfull \hbox (5.04211pt too wide) in paragraph at lines 73--74
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+[5 <C:/Users/Pieter/Documents/--- SCHOOL ---/GitHub/A&D/AD-assignment2/code/tex
+/8-puz_neighbours.jpg>] [6]
 ("C:\Users\Pieter\Documents\--- SCHOOL ---\GitHub\A&D\AD-assignment2\code\tex\r
-eport.bbl") [3]
+eport.bbl") [7]
 ("C:\Users\Pieter\Documents\--- SCHOOL ---\GitHub\A&D\AD-assignment2\code\tex\r
 eport.aux") ) 
 Here is how much of TeX's memory you used:
- 3181 strings out of 493921
- 41285 string characters out of 3144873
- 103570 words of memory out of 3000000
- 6439 multiletter control sequences out of 15000+200000
- 11659 words of font info for 43 fonts, out of 3000000 for 9000
+ 3350 strings out of 493921
+ 43578 string characters out of 3144873
+ 109100 words of memory out of 3000000
+ 6594 multiletter control sequences out of 15000+200000
+ 11828 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,5n,24p,313b,256s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,7n,24p,716b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-csc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
-.pfb>
-Output written on report.pdf (4 pages, 75470 bytes).
+csc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+>
+Output written on report.pdf (8 pages, 155556 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

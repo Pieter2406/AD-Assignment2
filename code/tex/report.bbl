@@ -3,9 +3,17 @@
 \bibitem{princetonPuzzle}
 cs.princeton.edu.
 \newblock 8 puzzle - cos 226 programming assignment.
+\newblock
+  \url{http://www.cs.princeton.edu/courses/archive/fall12/cos226/assignments/8puzzle.html}.
 
 \bibitem{A*Wiki}
 Wikipedia.
 \newblock A* search algorithm.
+\newblock \url{http://en.wikipedia.org/wiki/A*_search_algorithm}.
+
+\bibitem{MooreLaw}
+Wikipedia.
+\newblock Moore's law.
+\newblock \url{http://en.wikipedia.org/wiki/Moore%27s_law}.
 
 \end{thebibliography}

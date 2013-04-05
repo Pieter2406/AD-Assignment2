@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.12)  3 APR 2013 03:46
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.12)  5 APR 2013 03:16
 entering extended mode
 **title.tex
 
@@ -163,7 +163,7 @@ Overfull \hbox (33.13318pt too wide) in paragraph at lines 6--6
 
 ! Undefined control sequence.
 l.10 { \huge
-             \bfseries Assignment 2}\\[0.5cm]
+             \bfseries Assignment 2 \\ \large{ 8-Puzzle }}\\[0.5cm]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -178,6 +178,27 @@ Overfull \hbox (58.4955pt too wide) in paragraph at lines 10--10
 
 Overfull \hbox (5.74997pt too wide) in paragraph at lines 10--10
  \OT1/cmr/bx/n/10 2 
+ []
+
+! Undefined control sequence.
+<recently read> \large 
+                       
+l.10 { \huge \bfseries Assignment 2 \\ \large
+                                             { 8-Puzzle }}\\[0.5cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 10--10
+ []\OT1/cmr/bx/n/10 8- 
+ []
+
+
+Overfull \hbox (32.93733pt too wide) in paragraph at lines 10--10
+ \OT1/cmr/bx/n/10 Puzzle 
  []
 
 ! Undefined control sequence.
@@ -256,19 +277,18 @@ Overfull \hbox (3686.37498pt too wide) in paragraph at lines 15--36
 
 ! Undefined control sequence.
 l.40 {\large
-             March 15, 2013}
+             April 5, 2013}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no M in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no 2 in font nullfont!
@@ -302,5 +322,5 @@ Here is how much of TeX's memory you used:
  3411 multiletter control sequences out of 15000+200000
  4595 words of font info for 17 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 20i,3n,18p,83b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20i,3n,18p,90b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

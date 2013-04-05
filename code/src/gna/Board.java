@@ -115,39 +115,7 @@ public class Board implements Iterable<Board>
 		return boardList;
 	}
 	
-	/**
-	 * @return the emptySpotX
-	 */
-	public int getEmptySpotX() {
-		return emptySpotX;
-	}
-
-	/**
-	 * @param emptySpotX the emptySpotX to set
-	 */
-	public void setEmptySpotX(int emptySpotX) {
-		this.emptySpotX = emptySpotX;
-	}
-
-	/**
-	 * @return the emptySpotY
-	 */
-	public int getEmptySpotY() {
-		return emptySpotY;
-	}
-
-	/**
-	 * @param emptySpotY the emptySpotY to set
-	 */
-	public void setEmptySpotY(int emptySpotY) {
-		this.emptySpotY = emptySpotY;
-	}
-
-	public static void arrayCopy2D(int[][] array1,int[][] array2){
-		for (int i = 0; i < array1.length; i++) {
-		    System.arraycopy(array1[i], 0, array2[i], 0, array1[0].length);
-		}
-	}
+	
 	// return a string representation of the board
 	public String toString()
 	{
@@ -227,26 +195,57 @@ public class Board implements Iterable<Board>
 		Iterator<Board> it = this.neighbors().iterator();
 		return it;
 	}
-
+	//Make a copy of a two dimensional array, using the System.arraycopy method.
+	public static void arrayCopy2D(int[][] array1,int[][] array2){
+		for (int i = 0; i < array1.length; i++) {
+		    System.arraycopy(array1[i], 0, array2[i], 0, array1[0].length);
+		}
+	}
+	
+	/*************************************************************************
+	 *							Getters & Setters							 *
+	 *************************************************************************/
+	
 	/**
 	 * @return the tiles
 	 */
 	public int[][] getTiles() {
 		return tiles;
 	}
-
-	/**
-	 * @param tiles the tiles to set
-	 */
-	public void setTiles(int[][] tiles) {
-		this.tiles = tiles;
-	}
-
+	
 	/**
 	 * @return the width
 	 */
 	public int getWidth() {
 		return width;
+	}
+	
+	/**
+	 * @return the height
+	 */
+	public int getHeight() {
+		return height;
+	}
+	
+	/**
+	 * @return the emptySpotX
+	 */
+	public int getEmptySpotX() {
+		return emptySpotX;
+	}
+	
+	/**
+	 * @return the emptySpotY
+	 */
+	public int getEmptySpotY() {
+		return emptySpotY;
+	}
+	
+	/**
+	 * @param tiles the tiles to set
+	 */
+	public void setTiles(int[][] tiles) {
+		this.tiles = tiles;
 	}
 
 	/**
@@ -257,17 +256,26 @@ public class Board implements Iterable<Board>
 	}
 
 	/**
-	 * @return the height
-	 */
-	public int getHeight() {
-		return height;
-	}
-
-	/**
 	 * @param height the height to set
 	 */
 	public void setHeight(int height) {
 		this.height = height;
 	}
+	
+	/**
+	 * @param emptySpotX the emptySpotX to set
+	 */
+	public void setEmptySpotX(int emptySpotX) {
+		this.emptySpotX = emptySpotX;
+	}
+
+	/**
+	 * @param emptySpotY the emptySpotY to set
+	 */
+	public void setEmptySpotY(int emptySpotY) {
+		this.emptySpotY = emptySpotY;
+	}
+
+	
 }
 

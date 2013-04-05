@@ -25,20 +25,23 @@ public class Solver
 			moves = -1;
 		}
 	}
+	//Function to add neighboring boards to the priority queue
 	public void stateToPQ(){
 		initState = statePQ.remove();
 		for(Board brd : initState.getInitBoard()){
+			int priority = brd.hamming();
 			if(initState.getPreviousState() == null){
-				InterState neighborState = new InterState(brd.hamming(),initState,brd);
+				InterState neighborState = new InterState(priority,initState,brd);
 				statePQ.add(neighborState);
 			}
 			else if(!brd.equals(initState.getPreviousState().getInitBoard())){
-				InterState neighborState = new InterState(brd.hamming(),initState,brd);
+				InterState neighborState = new InterState(priority,initState,brd);
 				statePQ.add(neighborState);
 			}
 
 		}
 	}
+	//Function to check whether the given board is the goalstate
 	public boolean isGoalState(Board board){
 		if(board.getTiles()[board.getHeight() - 1][board.getWidth() - 1] == 0){
 			for(int y = 0; y < board.getHeight(); y++){
@@ -68,6 +71,7 @@ public class Solver
 		int[] serializedBoard = new int[bHeight*bWidth - 1];
 		int index = 0;
 		int emptySpotIndex = 0;
+		//Put the two dimensional array in a one dimensional array without the empty spot.
 		for(int y = 0; y < bHeight ; y++){
 			for(int x = 0; x < bWidth;x++){
 				if(initState.getInitBoard().getTiles()[y][x] == 0){
@@ -79,12 +83,11 @@ public class Solver
 
 			}
 		}
-
+		//Calculate inversions
 		for(int i = 0 ; i < serializedBoard.length;i++){
 			for(int j = i+1; j < serializedBoard.length;j++){
-				if(serializedBoard[i] > serializedBoard[j] && j > i){
+				if(serializedBoard[i] > serializedBoard[j]){
 					inversions++;
-					break;	
 				}
 			}
 		}
@@ -92,13 +95,19 @@ public class Solver
 		if(bHeight % 2 == 0){
 			/*	if inversions + the row index of the empty spot is odd,
 			 * 	the puzzle is solvable. */
-			if(inversions + emptySpotIndex % 2 != 0)	return true;
-			else										return false;
+			if((inversions + emptySpotIndex) % 2 != 0){
+				return true;
+			}else{
+				return false;
+			}
 		}else{
 			// if size is odd
 			// If the amount of inversions is even, the puzzle is solvable. 
-			if(inversions % 2 == 0)		return true;
-			else						return false;
+			if(inversions % 2 == 0){
+				return true;
+			}else{
+				return false;
+			}
 		}
 	}
 

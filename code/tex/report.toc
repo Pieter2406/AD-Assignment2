@@ -1,8 +1,7 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}8-puzzle}{2}
-\contentsline {section}{\numberline {3}Experimental data}{2}
-\contentsline {subsection}{\numberline {3.1}Manhatten priority}{2}
-\contentsline {subsection}{\numberline {3.2}Hamming priority}{2}
-\contentsline {section}{\numberline {4}Q{\&}A: Questions and Answers}{2}
-\contentsline {section}{\numberline {5}Conclusion}{2}
+\contentsline {section}{\numberline {2}8-puzzle}{3}
+\contentsline {subsection}{\numberline {2.1}Solvemethod - A* algorithm}{3}
+\contentsline {subsection}{\numberline {2.2}Experimental data}{3}
+\contentsline {section}{\numberline {3}Code clarification}{5}
+\contentsline {section}{\numberline {4}Conclusion}{6}
